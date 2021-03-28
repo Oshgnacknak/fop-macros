@@ -1,0 +1,5 @@
+(define (filtermap p f lst)
+  (cond
+    [(empty? lst) empty]
+    [(p (first lst)) (cons (f (first lst)) (filtermap p f (rest lst)))]
+    [else (filtermap p f (rest lst))]))

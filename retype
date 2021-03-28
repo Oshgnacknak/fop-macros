@@ -1,0 +1,23 @@
+#!/bin/bash
+
+DELAY="40"
+LINE_DELAY="0.1"
+
+if [[ $# == 0 ]]; then
+    echo "Usage: $0 <name-of-macro>"
+    exit 1
+fi
+
+file="./macros/$1"
+
+setxkbmap
+while IFS='' read -r line; do
+    xdotool type \
+        --clearmodifiers \
+        --delay $DELAY \
+        "$line"
+    xdotool key \
+        --clearmodifiers \
+        --delay $DELAY \
+        Return
+done < $file

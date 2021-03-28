@@ -1,0 +1,17 @@
+ctrl + shift + alt + a
+    ./retype aspekts_of_oop
+
+ctrl + shift + alt + f + m
+    ./retype filtermap
+
+ctrl + shift + alt + i
+    ./retype interface
+
+ctrl + shift + alt + c
+    ./retype class
+
+ctrl + shift + alt + e
+    ./retype exception
+
+ctrl + shift + alt + l
+    ./retype listitemmethod

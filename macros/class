@@ -1,0 +1,32 @@
+public abstract class C<T1> extends D implements I<T1> {
+
+	protected List<T1> l1;
+	protected List<T1> l2;
+	protected List<T1> l3;
+	
+	public C(int i1, int i2, int i3, List<T1> l1, List<T1> l2, List<T1> l3) {
+		super(i1, i2, i3);
+		this.l1 = l1;
+		this.l2 = l2;
+		this.l3 = l3;
+	}
+
+	@Override
+	public <T2> T1 m1(T1 t1, T2 t2) throws Exception {
+		return null;
+	}
+	
+	@Override
+	public <T2> T1 m2(T1 t1, T2 t2) throws Exception {
+		return null;
+	}
+
+	public static <T> T m2(T t) throws Exception {
+		return null;
+	}
+
+	
+	public abstract <T> T m6(T t) throws Exception;
+	public abstract <T> T m7(T t) throws Exception;
+	public abstract <T> T m8(T t) throws Exception;
+}
