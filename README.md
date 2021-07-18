@@ -1,6 +1,6 @@
 # FOP Macros
 
-Collection of macros to to help during the FOP exam.
+Collection of macros to to help during the FOP and AUD exams.
 If any macro breaks your typing,
 press and release `ctrl + shift + alt` to fix those keys.
 
